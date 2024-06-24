@@ -1,0 +1,111 @@
+/* base.css */
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --heading-font: 'Oswald', sans-serif;
+    --body-font: 'Mukta', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+header h1 {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    margin-right: 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin-bottom: 5px;
+}
+
+.card ul li a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.card ul li a:hover {
+    text-decoration: underline;
+}
+
+aside {
+    background-color: #e2e2e2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p span {
+    font-weight: 700;
+}
