@@ -1,0 +1,23 @@
+/* Larger screen styling */
+#nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-menu li {
+    margin: 0 1rem;
+}
+
+#hamburger {
+    display: none; 
+}
+
+/* .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+} */
+
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Multiple columns for larger screens */
+    }
+}
