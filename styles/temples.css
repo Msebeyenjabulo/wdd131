@@ -37,7 +37,7 @@ nav {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
 #nav-menu {
@@ -46,7 +46,7 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
 #nav-menu li {
@@ -75,10 +75,15 @@ h2 {
     font-size: 1.25rem;
 }
 
-.gallery {
+/* .gallery {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+} */
+
+.gallery img {
+    width: 100%;
+    height: auto;
 }
 
 figure {
