@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cape Town, South Africa</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cape Town, South Africa</h1>
+    </header>
+    
+    <main>
+        <section class="mobile-view">
+            <div class="place-title">Cape Town</div>
+            <img src="cape-town-image.jpg" srcset="cape-town-image.jpg 320w, cape-town-image-medium.jpg 768w, cape-town-image-large.jpg 1200w" sizes="(max-width: 320px) 320px, (max-width: 768px) 768px, 1200px" alt="Cape Town">
+            <div class="data">Data section</div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <img src="weather-icon.svg" alt="Weather Icon">
+                <div class="windchill">Windchill: <span id="windchill">N/A</span></div>
+            </div>
+        </section>
+
+        <section class="wider-view">
+            <div class="place-title">Cape Town</div>
+            <div class="large-image">
+                <img src="cape-town-image-large.jpg" srcset="cape-town-image-large.jpg 1200w, cape-town-image-extra-large.jpg 1800w" sizes="(max-width: 1200px) 1200px, 1800px" alt="Cape Town">
+                <div class="data">Data section</div>
+                <div class="weather">
+                    <h2>Weather</h2>
+                    <span class="weather-icon">⛅</span>
+                    <div class="windchill">Windchill: <span id="windchillWide">N/A</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; <span id="currentYear"></span> | Last Modified: <span id="lastModified"></span>
+    </footer>
+</body>
+</html>
