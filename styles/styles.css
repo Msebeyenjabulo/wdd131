@@ -1,6 +1,9 @@
 /* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
 :root {
-    --primary-color: #3b5998; /* Example color scheme */
+    --primary-color: #00133b; 
+    --secondary-color: #ffcc00;
     --font-title: 'Anton', sans-serif;
     --font-body: 'Arimo', sans-serif;
 }
