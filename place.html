@@ -1,71 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cape Town, South Africa weather">
     <meta name="author" content="Msebeyanjabulo Magubane">
     <title>Cape Town, South Africa</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script rel="stylesheet" src="scripts/script.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Cape Town, South Africa</h1>
     </header>
-    
     <main>
-        <section class="mobile-view">
-            <div class="place-title">Cape Town</div>
-            <img src="beach-penguins-mobile-view.jpeg" alt="Cape Town" class="place-image">
-            <div class="data">
-                <p><strong>Area:</strong> 2,446 km²</p>
-                <p><strong>Population:</strong> 4.618 million</p>
-                <p><strong>Capital:</strong> Cape Town is the Capital of South Africa</p>
-                <p><strong>Languages:</strong> Afrikaans, Xhosa, English</p>
-                <p><strong>Currency:</strong> South African rand</p>
-                <p><strong>Time Zone:</strong> GMT+2</p>
-                <p><strong>Calling Code:</strong> +27</p>
-                <p><strong>Internet TLD:</strong> N/A</p>
-            </div>
-            <div class="weather">
-                <h2>Weather</h2>
-                <img src="partly-cloudy.webp" alt="Partly Cloudy" class="weather-icon">
-                <p><strong>Temperature:</strong> 16°C</p>
-                <p><strong>Conditions:</strong> Partly cloudy</p>
-                <p><strong>Wind:</strong> 5 km/h</p>
-                <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
-            </div>
+        <picture>
+            <source media="(max-width: 600px)" srcset="images/beach-penguins-mobile-view.jpeg" type="image/jpeg">
+            <source media="(min-width: 601px)" srcset="images/beach-penguins-wide-view.jpeg" type="image/jpeg">
+            <img src="images/beach-penguins-mobile-view.jpeg" alt="Beach Penguins">
+        </picture>
+        <section id="data">
+            <h2>Data</h2>
+            <ul>
+                <li>Area: 400.28 km²</li>
+                <li>Population: 4.6 million</li>
+                <li>Capital: Cape Town</li>
+                <li>Languages: English, Afrikaans, Xhosa</li>
+                <li>Currency: South African Rand (ZAR)</li>
+                <li>Time Zone: SAST (UTC+2)</li>
+                <li>Calling Code: +27</li>
+                <li>Internet TLD: .za</li>
+            </ul>
         </section>
-
-        <section class="wider-view">
-            <div class="place-title">Cape Town</div>
-            <div class="large-image">
-                <img src="beach-penguins-wide-view.jpeg" alt="Cape Town" class="place-image">
-                <div class="data">
-                    <p><strong>Area:</strong> [Area]</p>
-                    <p><strong>Population:</strong> [Population]</p>
-                    <p><strong>Capital:</strong> [Capital]</p>
-                    <p><strong>Languages:</strong> [Languages]</p>
-                    <p><strong>Currency:</strong> [Currency]</p>
-                    <p><strong>Time Zone:</strong> [Time Zone]</p>
-                    <p><strong>Calling Code:</strong> [Calling Code]</p>
-                    <p><strong>Internet TLD:</strong> [Internet TLD]</p>
-                </div>
-                <div class="weather">
-                    <h2>Weather</h2>
-                    <img src="sunny.webp" alt="Sunny" class="weather-icon">
-                    <p><strong>Temperature:</strong> [Temperature]</p>
-                    <p><strong>Conditions:</strong> [Conditions]</p>
-                    <p><strong>Wind:</strong> [Wind]</p>
-                    <p><strong>Wind Chill:</strong> <span id="windchillWide">N/A</span></p>
-                </div>
-            </div>
+        <section id="weather">
+            <h2>Weather</h2>
+            <ul>
+                <li>Temperature: 22°C</li>
+                <li>Conditions: Sunny</li>
+                <li>Wind: 15 km/h</li>
+                <li>Wind Chill: <span id="windChill">N/A</span></li>
+            </ul>
+            <img src="images/sunny.webp" alt="Sunny">
         </section>
     </main>
-
     <footer>
-        &copy; <span id="currentYear"></span> | Last Modified: <span id="lastModified"></span>
+        <p>&copy; <span id="currentYear"></span> Msebeyenjabulo Magubane. All rights reserved.</p>
+        <p>Last modified: <span id="lastModified"></span></p>
     </footer>
 </body>
+
 </html>
+
