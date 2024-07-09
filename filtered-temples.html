@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple album page showcasing temple images with a responsive design">
+    <meta name="author" content="Msebeyanjabulo Magubane">
+    <title>Filtered Temples - Msebeyanjabulo Magubane</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Oswald:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <button id="hamburger" aria-label="Toggle navigation">☰</button>
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#old" data-filter="old">Old</a></li>
+                <li><a href="#new" data-filter="new">New</a></li>
+                <li><a href="#large" data-filter="large">Large</a></li>
+                <li><a href="#small" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- <h2>Temple Album</h2> -->
+        <section class="gallery" id="temple-gallery">
+            <!-- temple cards -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Msebeyanjabulo Magubane. All rights reserved.</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
