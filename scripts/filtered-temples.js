@@ -76,9 +76,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     ];
 
-    // Generate temple cards
+  
     function generateTempleCards(filter = null) {
-        templeGallery.innerHTML = ""; // Clear existing content
+        templeGallery.innerHTML = ""; 
 
         let filteredTemples = temples;
         if (filter) {
@@ -107,12 +107,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Show navigation menu on hamburger click
+    
     hamburger.addEventListener("click", () => {
         navMenu.classList.toggle("show");
     });
 
-    // Filter temples on nav link click
+  
     navMenu.addEventListener("click", (event) => {
         if (event.target.tagName === "A") {
             const filter = event.target.getAttribute("data-filter");
@@ -120,10 +120,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Display the current year and last modified date in the footer
+  
     document.getElementById("currentYear").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = document.lastModified;
 
-    // Generate initial temple cards
+   
     generateTempleCards();
 });
