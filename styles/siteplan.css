@@ -1,0 +1,34 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Intro:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    color: #171717;
+    background-color: #d1d1d1;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #171717;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Intro', sans-serif;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
