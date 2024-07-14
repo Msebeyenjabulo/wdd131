@@ -43,13 +43,13 @@ function populateProductNameOptions() {
 }
 
 function populateFeatureCheckboxes() {
-    const featureCheckboxes = document.querySelector('.feature-checkboxes');
+    const featureCheckboxes = document.getElementById('featureCheckboxes');
 
     products.forEach(product => {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.id = `feature-${product.id}`;
-        checkbox.name = 'usefulFeatures'; 
+        checkbox.name = 'usefulFeatures'; // Ensure this matches the name attribute in the HTML
         checkbox.value = product.name;
 
         const label = document.createElement('label');
