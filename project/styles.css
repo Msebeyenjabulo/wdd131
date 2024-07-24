@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+    color: #d1d1d1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #171717;
+    position: relative;
+}
+
+header .logo h1 {
+    color: #d1d1d1;
+    font-family: 'Intro', sans-serif;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d1d1d1;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff3c00;
+    font-weight: bold;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute; /* Absolute positioning within the header */
+    right: 20px; /* Adjust this value to position the hamburger menu from the right edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #d1d1d1;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #171717;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0; /* Add some padding to ensure space around items */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: add shadow for better visibility */
+        margin: 0; /* Remove margin */
+    }
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column; /* Stack items vertically for mobile view */
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center; /* Center hamburger vertically */
+        justify-content: center; 
+    }
+
+    /* Rotate and hide hamburger bars when menu is active */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(7px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-7px);
+    }
+}
+
+
+/* Carousel styles */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    cursor: grab;
+}
+
+.carousel:active {
+    cursor: grabbing;
+}
+
+
+.hero {
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+.hero img {
+    height: auto;
+    max-width: 100%;
+}
+
+.portfolio-carousel {
+    padding: 20px;
+}
+
+.portfolio-carousel h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel-item {
+    min-width: 200px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.services {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 1.5em;
+}
+
+.services p span {
+    font-weight: bold;
+    color: #171717;
+    transition: color 0.3s;
+}
+
+.services p span:hover {
+    color: #ff0000;
+}
+
+.contact-form {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-titles {
+    color: #171717;
+
+}
+
+
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid  #171717;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #171717;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.contact-form button:hover {
+    background-color: #ff3c00;
+    color: #171717;
+    font-weight: bold;
+}
+
+footer {
+    background: #171717;
+    color: #d1d1d1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.center-title {
+    text-align: center;
+    font-size: 2rem; 
+    margin-bottom: 20px;
+}
+
+/* Chunky text styles */
+.chunky-text {
+    font-size: 3rem; 
+    font-weight: bold;
+    line-height: 1.5;
+    color: #d1d1d1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.chunky-text span {
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+/* .chunky-text span:last-child::after {
+    content: ".";
+} */
+
+.chunky-text span:hover {
+    color: #ff3c00;
+}
+
+.work-section {
+    margin-top: 20px;
+}
+
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.work-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.credits {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.credits a {
+    color: #ff3c00;
+    text-decoration: none;
+}
+
+.credits a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .work-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .work-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.work-item {
+    position: relative;
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #171717;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.source-link {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #d1d1d1;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
+.source-link a {
+    color: #ff3c00;
+    text-decoration: none;
+}
+
+.source-link a:hover {
+    text-decoration: underline;
+}
+
+.about-us {
+    padding: 20px;
+}
+
+.about-us h2, .about-us h3 {
+    font-family: 'Intro', sans-serif;
+}
+
+.about-us p, .about-us ul {
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.6;
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin-bottom: 15px;
+}
