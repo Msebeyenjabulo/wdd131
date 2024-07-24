@@ -7,6 +7,33 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.toggle('active');
     });
 
+    // Carousel functionality
+    const carousel = document.querySelector('.carousel');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    carousel.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - carousel.offsetLeft;
+        scrollLeft = carousel.scrollLeft;
+    });
+
+    carousel.addEventListener('mouseleave', () => {
+        isDown = false;
+    });
+
+    carousel.addEventListener('mouseup', () => {
+        isDown = false;
+    });
+
+    carousel.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - carousel.offsetLeft;
+        const walk = (x - startX) * 2; //scroll-fast
+        carousel.scrollLeft = scrollLeft - walk;
+    });
 
     // Form validation
     const form = document.querySelector('form');
@@ -41,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     chunkyText.innerHTML = services.map(service => `<span>${service}.</span>`).join(' ');
 
+    // Remove the extra dot from the last service
     const lastService = chunkyText.querySelector('span:last-child');
     lastService.innerHTML = lastService.innerText.slice(0, -1);
 });
@@ -62,4 +90,5 @@ hamburger.addEventListener('click', () => {
     nav.classList.toggle('show');
     hamburger.classList.toggle('active'); // Optional: for styling the active state
 });
+
 
