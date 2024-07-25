@@ -56,10 +56,10 @@ nav ul li a:hover {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    position: absolute; /* Absolute positioning within the header */
-    right: 20px; /* Adjust this value to position the hamburger menu from the right edge */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Adjust for vertical centering */
+    position: absolute; 
+    right: 20px; 
+    top: 50%; 
+    transform: translateY(-50%); 
 }
 
 .hamburger span {
@@ -81,23 +81,23 @@ nav ul li a:hover {
         position: absolute;
         top: 60px;
         left: 0;
-        padding: 10px 0; /* Add some padding to ensure space around items */
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: add shadow for better visibility */
-        margin: 0; /* Remove margin */
+        padding: 10px 0; 
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+        margin: 0; 
     }
 
     nav ul.show {
         display: flex;
-        flex-direction: column; /* Stack items vertically for mobile view */
+        flex-direction: column; 
     }
 
     .hamburger {
         display: flex;
-        align-items: center; /* Center hamburger vertically */
+        align-items: center;
         justify-content: center; 
     }
 
-    /* Rotate and hide hamburger bars when menu is active */
+    
     .hamburger.active span:nth-child(1) {
         transform: rotate(45deg) translateY(7px);
     }
@@ -112,18 +112,6 @@ nav ul li a:hover {
 }
 
 
-/* Carousel styles */
-.carousel {
-    display: flex;
-    overflow-x: auto;
-    cursor: grab;
-}
-
-.carousel:active {
-    cursor: grabbing;
-}
-
-
 .hero {
 
     position: relative;
@@ -132,36 +120,11 @@ nav ul li a:hover {
 
 }
 
-
 .hero img {
     height: auto;
     max-width: 100%;
 }
 
-.portfolio-carousel {
-    padding: 20px;
-}
-
-.portfolio-carousel h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.carousel {
-    display: flex;
-    overflow-x: auto;
-}
-
-.carousel-item {
-    min-width: 200px;
-    margin-right: 20px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #d1d1d1;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
 
 .services {
     padding: 20px;
@@ -274,10 +237,6 @@ footer {
     display: inline-block;
     transition: color 0.3s ease;
 }
-
-/* .chunky-text span:last-child::after {
-    content: ".";
-} */
 
 .chunky-text span:hover {
     color: #ff3c00;

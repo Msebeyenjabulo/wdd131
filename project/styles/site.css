@@ -1,7 +1,4 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
-/* Replace with actual Intro font import if available */
-@import url('https://fonts.googleapis.com/css2?family=Intro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
     font-family: 'Red Hat Display', sans-serif;
